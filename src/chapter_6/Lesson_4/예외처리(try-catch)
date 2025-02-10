@@ -1,0 +1,15 @@
+
+예외처리 (Exception Handling)
+tyr{
+    ...
+    // 오류를 발생시킬 수 있는 코드
+} catch (Exception e) {
+    ...
+    // 오류가 발생한 경우 해결
+} catch (ArrayIndexOutOfBoundsException e) {  //처음 부분에 발생한 오류를 작성한다.
+    ...
+    // 오류가 발생한 경우 해결
+{
+
+
+*** 테스트 코드는 package chapter_6.Lesson_4.try_catch_Test; 에서 확인 가능 ***
