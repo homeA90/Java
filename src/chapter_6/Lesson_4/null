@@ -1,0 +1,44 @@
+자바에서 실수로 발생하는 대표적인 에러 중 하나를 살펴보겠습니다.
+
+어떤 언어들에서는 '비어있음'을 None으로 표현하고, 또 어떤 언어들에서는 nil로 표현하죠? 자바에서는 '비어있음'이 null이라는 값으로 표현됩니다. 단, null은 참조형 변수(Reference Type)만 가질 수 있는 값입니다!
+
+Person p1 = null;
+System.out.println(p1);
+null
+만약 null을 보관하고 있는 변수의 메소드를 호출하려고 하면 NullPointerException이라는 오류가 난다는 점을 주의해주세요.
+
+Person p1 = null;
+p1.getName();
+Exception in thread "main" java.lang.NullPointerException
+대처법
+아래 코드는 오류가 날 것입니다. people[1]과 people[4]는 null이기 때문에 p.getName()을 할 수가 없는 거죠.
+
+Person[] people = new Person[5];
+people[0] = new Person("김신의", 28);
+people[2] = new Person("문종모", 26);
+people[3] = new Person("서혜린", 21);
+
+for (int i = 0; i < people.length; i++) {
+    Person p = people[i];
+    System.out.println(p.getName());
+}
+이 문제를 해결하기 위해서는 p가 null인지 먼저 확인을 해주면 됩니다.
+
+Person[] people = new Person[5];
+people[0] = new Person("김신의", 28);
+people[2] = new Person("문종모", 26);
+people[3] = new Person("서혜린", 21);
+
+for (int i = 0; i < people.length; i++) {
+    Person p = people[i];
+    if (p != null) {
+        System.out.println(p.getName());
+    } else {
+        System.out.println(i + "번 자리는 비었습니다.");
+    }
+}
+김신의
+1번 자리는 비었습니다.
+문종모
+서혜린
+4번 자리는 비었습니다.
