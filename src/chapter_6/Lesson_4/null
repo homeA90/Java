@@ -42,3 +42,5 @@ for (int i = 0; i < people.length; i++) {
 문종모
 서혜린
 4번 자리는 비었습니다.
+
+실제 동작은 package chapter_6.Example_08.Null_test 파일 확인

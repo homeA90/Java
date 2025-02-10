@@ -1,8 +1,8 @@
 package chapter_6.Lesson_2.Example_2_12;
 
 public class MarketGood {
-    private String name;
-    private int retailPrice;
+    public final String name;
+    public final int retailPrice;
     private int discountRate;
 
 
@@ -27,17 +27,17 @@ public class MarketGood {
 
 
     //getter
-    public String getName() {
-        return name;
-    }
+//    public String getName() {
+//        return name;
+//    }
 
-    public int getRetailPrice() {
-        return retailPrice;
-    }
+//    public int getRetailPrice() {
+//        return retailPrice;
+//    }
 
-    public int getDiscountRate() {
-        return discountRate;
-    }
+//    public int getDiscountRate() {
+//        return discountRate;
+//    }
 
 
     //setter

@@ -10,7 +10,7 @@ public class Null_test {
 
         for (int i =0; i<people.length; i++) {
             if(people[i] != null){
-                System.out.println(people[i].getName());
+                System.out.println(people[i].getAge());
             } else {
                 System.out.println(i + "번 자리는 비었습니다.");
             }
