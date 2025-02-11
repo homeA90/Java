@@ -31,7 +31,7 @@ public class Driver {
 
 Math 클래스에 있는 abs(), max(), random() 등의 메소드가 바로 '클래스 메소드'입니다.
 
-main 메소드
+[main 메소드]
 사실 우리가 가장 먼저 접한 '클래스 메소드'는 바로 main 메소드입니다.
 
 public static void main(String[] args) {

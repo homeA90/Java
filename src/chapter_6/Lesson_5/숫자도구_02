@@ -1,0 +1,74 @@
+클래스 메소드' 노트에서 수학 관련 클래스인 Math 클래스를 보았었죠?
+이번에는 Math 클래스와 더불어 Random 클래스를 살펴보겠습니다.
+
+
+[Math 클래스]
+[절댓값]
+학창 시절 때 배웠던 '절댓값(Absolute Value)' 기억하시나요? a의 절댓값은 a와 0 사이의 거리라고 생각하면 되는데요.
+a >= 0일 경우에 a의 절댓값은 그냥 a이고, a < 0일 경우에 a의 절댓값은 -a입니다.
+
+import java.lang.Math;
+
+public class Driver {
+    public static void main(String[] args) {
+        System.out.println(Math.abs(-10));
+        System.out.println(Math.abs(8));
+    }
+}
+10
+8
+
+
+
+[최솟값, 최댓값]
+두 값 중 더 큰 값이나 더 작은 값을 구하고 싶으면 어떻게 해야할까요? if문을 사용하는 방법도 있겠지만 너무 번거롭죠?
+다행히 Math 클래스에는 이 임무를 수행해주는 max 메소드와 min 메소드가 있습니다!
+
+import java.lang.Math;
+
+public class Driver {
+    public static void main(String[] args) {
+        System.out.println(Math.min(4, 10));  // 최솟값
+        System.out.println(Math.max(4, 10));  // 최댓값
+    }
+}
+4
+10
+
+
+
+[Random 클래스]
+임의의 값을 받아오기 위해서는 Random 클래스를 import 해야 합니다. 그런데 Math와는 달리 Random은 인스턴스를 생성해서 사용해야 합니다.
+
+0 이상 n 이하의 랜덤 값을 받아오려면 Random 클래스에 있는 nextInt 메소드를 사용해보세요.
+
+import java.util.Random;
+
+public class Driver {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        System.out.println(rand.nextInt(10));   // 0 이상 9 이하의 랜덤한 값
+    }
+}
+테스트를 위해서 여러 번 실행해보시고요!
+
+
+
+
+[a와 b 사이의 랜덤 값]
+그럼 0 이상 n 이하가 아니라, a 이상 b 이하의 랜덤 값을 받아오려면 어떻게 해야할까요?
+
+이렇게 해주면 되겠죠?
+
+import java.util.Random;
+
+public class Driver {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int min = 10;
+        int max = 30;
+
+        System.out.println(rand.nextInt((max - min) + 1) + min);   // 10 이상 30 이하의 랜덤한 값
+    }
+}
+이것도 테스트를 위해서 여러 번 실행해보세요!
