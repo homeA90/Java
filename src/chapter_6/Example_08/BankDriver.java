@@ -11,7 +11,8 @@ public class BankDriver {
 //        p1.setName("김신의");
 //        p1.setAge(28);
 //        p1.setCashAmount(30000);
-        Person p1 = new Person("김신의", 28);
+//        Person p1 = new Person("김신의", 28);
+        Person p1 = new Person("김신의" , 28);
         p1.setCashAmount(30000);
 
         // 은행 계좌 생성

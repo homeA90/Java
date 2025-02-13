@@ -1,3 +1,5 @@
+
+
 자바의 변수에는 두 가지 종류가 있는데요. 하나는 '기본형(Primitive Type)', 그리고 다른 하나는 '참조형(Reference Type)'입니다.
 int, boolean, char, double 등은 모두 기본형이고, Person, String, int[] 등 클래스 기반 자료형은 모두 참조형입니다.
 

@@ -1,0 +1,18 @@
+And 연산 (&&)
+boolean newBoolean = m1() && m2() && m3();
+newBoolean이 true가 되기 위해서는 m1(), m2(), m3()가 모두 true를 리턴해야 하죠?
+따라서 m1()이 false를 리턴하면 m2()와 m3()의 결과와 상관 없이 newBoolean은 false입니다.
+
+실제로 자바는 효율성을 위해서 m1()이 false를 리턴하면 m2()와 m3()를 실행하지 않습니다.
+이렇게 식의 결과값이 이미 결정된 경우 미리 멈추는 것을 '숏서킷 연산(Short-circuit evaluation)'이라고 합니다.
+
+만약 m1()이 true를 리턴하는데, m2()가 false를 리턴하면 m3()는 실행되지 않습니다.
+
+
+
+Or 연산 (||)
+Or 연산(||)도 비슷하게 동작합니다.
+
+boolean newBoolean = m1() || m2() || m3();
+newBoolean이 false이기 위해서는 m1(), m2(), m3()의 리턴값이 모두 false이어야 합니다.
+따라서 m1()이 true를 리턴하면 m2()와 m3()는 실행되지 않고 newBoolean은 true가 됩니다.

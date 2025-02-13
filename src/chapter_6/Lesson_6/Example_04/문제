@@ -1,0 +1,20 @@
+MP3 플레이리스트
+스마트폰, 음악 스트리밍 사이트, iTunes 등 음악을 정리하고 재생할 수 있는 서비스들이 많이 있습니다. 실제로 이런 서비스를 구현하기 위해서 객체 지향 프로그래밍이 사용됩니다!
+
+구조
+아래 사진은 일반적인 음악 정리 구조를 나타내고 있습니다.
+
+
+
+'Lianna La Havas'라는 아티스트는 'Blood'와 'Is Your Love Big Enough?' 등 여러 앨범을 가지고 있습니다.
+
+그리고 아래 사진에 나와있듯이 한 앨범은 여러 노래를 담고 있습니다.
+
+
+
+콘솔 아웃풋
+I Got It Bad (and That Ain't Good) - Keith Jarrett
+The Melody At Night With You(1999)
+
+Begin - 방탄소년단
+WINGS(2016)
