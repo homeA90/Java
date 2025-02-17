@@ -9,6 +9,7 @@
 ## git merge 사용
 1. master 브랜치와 feature 브랜치가 있다고 가정한다.
 2. master 브랜치에서 작업 중이고, feature 브랜치에서 새로운 기능을 개발한 후 feature 브랜치를 master에 병합하려고 한다.
+   
    ```bash
 	# main 브랜치에서 작업
 	git checkout main
