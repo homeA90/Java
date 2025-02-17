@@ -6,7 +6,7 @@
 - git merge는 두 브랜치를 병합하여 하나의 커밋을 생성하는 방법
 - 기본적으로 두 브랜치의 작업을 하나로 합치는 작업을 수행하며, 병합 커밋이 생성 됨
  
-### git merge 사용
+## git merge 사용
 	1. master 브랜치와 feature 브랜치가 있다고 가정한다.
 	2. master 브랜치에서 작업 중이고, feature 브랜치에서 새로운 기능을 개발한 후 feature 브랜치를 master에 병합하려고 한다.
    ```bash
