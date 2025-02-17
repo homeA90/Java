@@ -38,8 +38,6 @@ A---B---C---D---G (main)
 ```
 
 
-
-
 - 병합 커밋 예시2:
 ```bash
 A---B---C---D (main)
@@ -54,6 +52,7 @@ A---B---C---D (master)
           E---F (feature)
 ```
 
+
 - 병합 커밋 예시3:
 ```bash
 A---B---C---D (main)
@@ -62,9 +61,13 @@ A---B---C---D (main)
 ```
 위와 같은 상태에서 main의 내용 feature에 병합
 git merge main를 실행하면 병합 커밋 G가 생성 된다.
+```bash
 A---B---C---D (master)
          \     \
           E---F---G (feature)
+```
+
+
 
 ## git rebase
 
